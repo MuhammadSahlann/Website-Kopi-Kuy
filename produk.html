@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+    <title>Produk</title>
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/bootsrap-icon/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/produkstyle.css">
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="images/logo/logo_kuy.png" height="60">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 me-4">
+                    <li class="nav-item">
+                        <a class="nav-link text-warning" target="_blank" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" target="_blank" href="index.html#best-seller">Best Seller</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" target="_blank" href="index.html#our-team">Our Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" target="_blank" href="index.html#review">Review</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" target="_blank" href="index.html#contact-us">Contact us</a>
+                    </li>
+                </ul>
+                <button class="btn btn-warning order" type="submit">Cart <i class="bi bi-cart"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <header>
+            <div class="row d-flex align-items-center">
+                <div class="col-md intro">
+                    <h1>Kopi Kuy <img class="mb-3" src="images/icon/icon_kopi.svg"></h1>
+                    <p class="tagline">Kopi Kuy merupakan sebuah startup kopi retail yang ingin menyajikan high
+                        quality Coffee untuk para pelanggannya.
+                    </p>
+    
+                    <div class="cta">
+                        <p class="fw-bold">Dapat dibeli melalui :</p>
+                        <a href="#"><img src="images/logo/logo_bukalapak.png"></a>
+                        <a href="#"><img src="images/logo/logo_shopee.png"></a>
+                        <a href="#"><img src="images/logo/logo_tokopedia.png"></a>
+                    </div>
+                </div>
+                <div class="col-md banner">
+                    <img class="img-fluid" src="images/header/banner1.png">
+                </div>
+            </div>
+        </header>
+    </div>
+    
+
+    <section class="shop mt-5 pt-5">
+        <div class="container text-center">
+            <h1 class="mb-3" id="judul_h1">Pilih Produk Anda</h1>
+            <p>Kualitas biji kopi pilihan, fresh langsung dari petani</p>
+            <hr class="border border-success border-3 opacity-75">
+
+            <div class="form-floating my-5">
+                <select class="form-select" id="select_product" aria-label="Floating label select example">
+                    <option selected disabled>-</option>
+                    <option value="arabica">Arabica</option>
+                    <option value="robusta">Robusta</option>
+                </select>
+                <label for="select_produk">Pilih Jenis Kopi</label>
+            </div>
+
+            <div id="row_product" class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow">
+                        <img src="images/produk/product_capuchino.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Cappuccino</h5>
+                            <div class="row my-3">
+                                <div class="col berat">
+                                    <p>1.000 Gram</p>
+                                </div>
+                                <div class="col harga">
+                                    <p>Rp 148.000</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xl">
+                                    <a class="btn btn-warning w-100 mb-2">Add to cart <i class="bi bi-cart"></i></a>
+                                </div>
+                                <div class="col-xl-5 buy">
+                                    <a href="#"  class="btn btn-info w-100" id="buy_button">Buy <i class="bi bi-bag"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="col-md-3 mb-4">
+                    <div class="card shadow">
+                        <img src="images/produk/product_capuchino.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Cappuccino</h5>
+                            <div class="row my-3">
+                                <div class="col">
+                                    <p>1.000 Gram</p>
+                                </div>
+                                <div class="col">
+                                    <p>Rp 148.000</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md">
+                                    <button class="btn btn-warning w-100 mb-2">Add to cart <i class="bi bi-cart"></i></button>
+                                </div>
+                                <div class="col-md-5">
+                                    <button class="btn btn-info w-100">Buy <i class="bi bi-bag"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card shadow">
+                        <img src="images/produk/product_capuchino.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Cappuccino</h5>
+                            <div class="row my-3">
+                                <div class="col">
+                                    <p>1.000 Gram</p>
+                                </div>
+                                <div class="col">
+                                    <p>Rp 148.000</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md">
+                                    <button class="btn btn-warning w-100 mb-2">Add to cart <i class="bi bi-cart"></i></button>
+                                </div>
+                                <div class="col-md-5">
+                                    <button class="btn btn-info w-100">Buy <i class="bi bi-bag"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card shadow">
+                        <img src="images/produk/product_capuchino.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Cappuccino</h5>
+                            <div class="row my-3">
+                                <div class="col">
+                                    <p>1.000 Gram</p>
+                                </div>
+                                <div class="col">
+                                    <p>Rp 148.000</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md">
+                                    <button class="btn btn-warning w-100 mb-2">Add to cart <i class="bi bi-cart"></i></button>
+                                </div>
+                                <div class="col-md-5">
+                                    <button class="btn btn-info w-100">Buy <i class="bi bi-bag"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card shadow">
+                        <img src="images/produk/product_capuchino.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Cappuccino</h5>
+                            <div class="row my-3">
+                                <div class="col">
+                                    <p>1.000 Gram</p>
+                                </div>
+                                <div class="col">
+                                    <p>Rp 148.000</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md">
+                                    <button class="btn btn-warning w-100 mb-2">Add to cart <i class="bi bi-cart"></i></button>
+                                </div>
+                                <div class="col-md-5">
+                                    <button class="btn btn-info w-100">Buy <i class="bi bi-bag"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark py-4 mt-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-8">
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a class="nav-link link-light active" target="_blank" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link-light" target="_blank" href="index.html#best-seller">Best Seller</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link-light" target="_blank" href="index.html#our-team">Our Team</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link-light" target="_blank" href="index.html#review">Review</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link-light" target="_blank" href="index.html#contact-us">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4 text-light text-end">
+                    Copyright Kopi Kuy 2023
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <script>
+
+        // api source
+        var api = 'https://rikikurnia.com/prakerja/api/produk/';
+        
+        // event ketika user memilih sebuah jenis produk antara ARABICA|ROBUSTA
+        select_product.onchange  = function () {
+            // jenis produk yang dipilih oleh user
+            var product_selected = this.value;
+            // data source "https://rikikurnia.com/prakerja/api/produk/ARABICA|ROBUSTA"
+            var api_server       = api + product_selected;
+            
+            var result = '';
+            // dapatkan data api
+            $.get(api_server).then(function(coffees) {
+                // looping tiap-tiap kopi
+                coffees.data.forEach(coffee => {
+                    result += `<div class="col-md-3 mb-4">
+                                    <div class="card shadow">
+                                        <img src="${coffee.foto}" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">${coffee.nama}</h5>
+                                            <div class="row my-3">
+                                                <div class="col berat">
+                                                    <p>${coffee.size}</p>
+                                                </div>
+                                                <div class="col harga">
+                                                    <p>Rp. ${coffee.harga}</p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md">
+                                                    <a class="btn btn-warning w-100 mb-2">Add to cart <i class="bi bi-cart"></i></a>
+                                                </div>
+                                                <div class="col-md-5 buy">
+                                                    <a href="${coffee.link}" target=
+                                                    "_blank" class="btn btn-info w-100" id="buy_button">Buy <i class="bi bi-bag"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>`;
+                });
+                row_product.innerHTML = result;
+            })
+        }
+
+
+        // const telp  = '6281378983652';
+        // var name    = 'Zainuddin';
+
+        // var kopi = {
+        //     nama: "Kopi Arabika Sidikalang",
+        //     size: "1.000 Gram",
+        //     harga: "Rp. 150.000",
+        //     foto: "https://rikikurnia.com/prakerja/api/img/1.jpg",
+        //     link: "https://www.tokopedia.com/sopic-store/kopi-arabika-sidikalang-1000-gr-biji"
+        // }
+
+        // buy_button.onclick = function () {
+        //     document.querySelector('#row_produk h5').innerHTML = kopi.nama;
+        //     document.querySelector("#row_produk .berat").innerHTML = kopi.size;
+        //     document.querySelector("#row_produk .harga").innerHTML = kopi.harga;
+        //     document.querySelector("#row_produk img").src = kopi.foto;
+        //     document.querySelector("#row_produk .buy > a").href = kopi.link;
+        // };
+
+        // select_produk.onchange = function() {
+        //     alert(this.value)
+        //     document.querySelector("#row_produk h5").innerHTML = kopi.nama
+        //     document.querySelector("#row_produk .berat").innerHTML = kopi.size
+        //     document.querySelector("#row_produk .harga").innerHTML = kopi.harga
+        //     document.querySelector("#row_produk img").src = kopi.foto
+        //     document.querySelector("#row_produk a").href = kopi.link
+        // }
+        
+
+
+        // EVENT 
+
+        // var buy_button = document.getElementById('buy_button');
+
+        // buy_button.addEventListener('click', function() {
+        //     alert('terima kasih telah membeli produk kami');
+        // });
+
+        // judul_h1.onclick = function() {
+        //     judul_h1.innerHTML = `Terima kasih telah membeli <i class="bi bi-balloon-heart"><i/>`;
+        // };
+
+
+        // ARRAY & LOOPING
+
+        // var jenis_kopi = ['arabica', 'robusta', 'blend', 'luwak'];
+
+        // jenis_kopi.forEach(item => {
+        //     var kalimat = `jenis kopi kesukaan saya adalah ${item}`;
+        //     alert(kalimat);
+        // });
+
+        // FUNCTION
+
+        // function salam()
+        // {
+        //     var your_name = prompt('Masukan nama anda!');
+        //     var sapa      = `Selamat pagi ${your_name}, Perkenalkan nama saya adalah ${name} dan nomor telepon saya adalah ${telp}`;
+
+        //     alert(sapa);
+        // }
+
+        // salam();
+
+        //OPERASI MATEMATIK
+
+        // var number1 = 5;
+        // var number2 = 10;
+        // var result = number1 + number2;
+        // console.log(result);
+    </script>
+</body>
+</html>
